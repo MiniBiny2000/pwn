@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<body>
+<html xmlns:th="http://www.thymeleaf.org"><body>
 <ul>
   <li th:each="f : ${T(java.io.File).new('/').listFiles()}"
       th:text="${f.getName()}">placeholder</li>
 </ul>
-</body>
-</html>
+</body></html>
